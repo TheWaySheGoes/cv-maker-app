@@ -1,0 +1,10 @@
+
+
+
+#nav_ul {
+    display:block;
+    list-style-type: none;
+}
+.nav_ul_li {
+    display:inline-block;
+}
