@@ -1,7 +1,12 @@
 import { Outlet, Link } from "react-router-dom";
-import style from '../css/style.module.css'
+import style from './Layout.module.css'
+import React from "react";
+
+
 
 const Layout = () => {
+
+
     return (
 
         <>
@@ -20,9 +25,8 @@ const Layout = () => {
 
             <Outlet />
 
-
             <footer>
-            <nav>
+                <nav>
                     <ul id={style.nav_ul}>
                         <li className={style.nav_ul_li}>
                             <Link to="/">Data</Link>

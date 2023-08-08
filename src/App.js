@@ -1,10 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter, Routes, Route, Form } from "react-router-dom";
-import Layout from './pages/Layout';
-import Data from './pages/Data';
-import CV from './pages/CV';
-import NoPage from './pages/NoPage';
+import Layout from './features/Layout/Layout';
+import Data from './features/Data/Data';
+import CV from './features/CV/CV';
+import NoPage from './features/NoPage/NoPage';
 
 
 function App() {

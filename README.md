@@ -1,5 +1,5 @@
-# CV maker Web app
-This is a simple implementation of the Node.js/React frameworks for creating a CV in the browser.
+# CV-maker Web App
+This is a simple implementation of the Node.js/React + Redux frameworks for creating a CV in the browser.
 User has to enter information in the form and the CV is going to be generated. From there it can be 
 printed out via browser.
 
