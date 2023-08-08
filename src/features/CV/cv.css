@@ -1,0 +1,58 @@
+body * {
+    border: solid black 1px;
+}
+
+@media print {
+    body * {
+        visibility: hidden;
+    }
+    main, main * {
+        visibility: visible;
+    }
+    main {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+}
+
+#main {
+    width: 21cm;
+    height: 29.7cm;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.item1 {grid-area:image;}
+.item2 {grid-area:name;}
+.item3 {grid-area:contact;}
+.item4 {grid-area:about;}
+.item5 {grid-area:work;}
+.item6 {grid-area:social;}
+.item7 {grid-area:education;}
+.item8 {grid-area:references;}
+.empty {grid-area:empty}
+
+.grid_container {
+    display: grid;
+    grid-template-areas: 
+    'image name empty contact'
+    'about work work work'
+    'social education education education'
+    'social references references references';
+    gap: 0px;
+    background-color: #2196F3;
+    padding: 15px;
+
+}
+.grid_container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+
+#photo {
+    height: 150px;
+}
+

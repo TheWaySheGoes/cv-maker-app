@@ -1,21 +1,7 @@
 import { memo, useState } from "react";
 import { useSelector, useDispatch } from 'react-redux'
-import './cv.module.css'
+import './cv.css'
 import {
-    setFName,
-    setMName,
-    setLName,
-    setJobTitle,
-    setAddress,
-    setTel,
-    setEmail,
-    setWebpage,
-    setAboutMe,
-    setSocialLinks,
-    setWorkExperience,
-    setEducation,
-    setImage,
-    setReferences,
     selectFName,
     selectMName,
     selectLName,
@@ -36,30 +22,38 @@ import {
 const CV = () => {
     const dispatch = useDispatch();
 
-    const [fName, setFNameState] = useState(useSelector(selectFName));
-    const [mName, setMNameState] = useState(useSelector(selectMName));
-    const [lName, setLNameState] = useState(useSelector(selectLName));
-    const [jobTitle, setJobTitleState] = useState(useSelector(selectJobTitle));
-    const [address, setAddressState] = useState(useSelector(selectAddress));
-    const [tel, setTelState] = useState(useSelector(selectTel));
-    const [email, setEmailState] = useState(useSelector(selectEmail));
-    const [webPage, setWebpageState] = useState(useSelector(selectWebpage));
-    const [aboutMe, setAboutMeState] = useState(useSelector(selectAboutMe));
-    const [socialLinks, setSocialLinksState] = useState(useSelector(selectSocialLinks));
-    const [workExperience, setWorkExperianceState] = useState(useSelector(selectWorkExperience));
-    const [education, setEducationState] = useState(useSelector(selectEducation));
-    const [image, setImageState] = useState(useSelector(selectImage));
-    const [references, setReferencesState] = useState(useSelector(selectReferences));
+    const fName = useSelector(selectFName);
+    const mName = useSelector(selectMName);
+    const lName = useSelector(selectLName);
+    const jobTitle = useSelector(selectJobTitle);
+    const address = useSelector(selectAddress);
+    const tel = useSelector(selectTel);
+    const email = useSelector(selectEmail);
+    const webPage = useSelector(selectWebpage);
+    const aboutMe = useSelector(selectAboutMe);
+    const socialLinks = useSelector(selectSocialLinks);
+    const workExperience = useSelector(selectWorkExperience);
+    const education = useSelector(selectEducation);
+    const image = useSelector(selectImage);
+    const references = useSelector(selectReferences);
 
     return (
         <>
-            <main role="main">
-                    <article>
-                        <h1>aaa</h1>
-                        <p>dasdasdas</p>
-                        <p>dasdasdas</p>
-
-                    </article>
+            <main id="main">
+                <article>
+                    <div class="grid_container">
+                        <div class="item1"><img id="photo" src={image} alt="Photo"></img></div>
+                        <div class="item2">Name</div>
+                        <div class="empty"></div>
+                        <div class="item3">Contact</div>
+                        <div class="item4">About</div>
+                        <div class="item5">Work</div>
+                        <div class="item6">Social</div>
+                        <div class="item7">Education</div>
+                        <div class="item8">References</div>
+                                           
+                    </div>
+                </article>
             </main>
         </>
     );
