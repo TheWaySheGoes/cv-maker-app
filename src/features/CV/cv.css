@@ -1,6 +1,7 @@
+/*
 body * {
     border: solid black 1px;
-}
+}*/
 
 @media print {
     body * {
@@ -16,43 +17,63 @@ body * {
     }
 }
 
-#main {
-    width: 21cm;
-    height: 29.7cm;
-    margin-left: auto;
-    margin-right: auto;
+h4, h3, h2, h1, p {
+    margin: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.white_text {
+    color: lightgray;
 }
 
-.item1 {grid-area:image;}
+aside {
+    float: left;
+    width: 25%;
+    display: inline-block;
+}
+article{
+    float: right;
+    width: 70%;
+    display: inline-block;
+    border-left: 1px solid gray;
+    margin-bottom: 10px;
+}
+
+
+.item1 {
+    grid-area:image; 
+    background-color: gray; 
+}
 .item2 {grid-area:name;}
 .item3 {grid-area:contact;}
-.item4 {grid-area:about;}
-.item5 {grid-area:work;}
-.item6 {grid-area:social;}
-.item7 {grid-area:education;}
+.item4 {grid-area:about; background-color: gray;}
+.item5 {grid-area:work; border-top: solid 1px gray;}
+.item6 {grid-area:social; background-color: gray; border-top: solid 1px lightgray;}
+.item7 {grid-area:education; border-top: solid 1px gray;}
 .item8 {grid-area:references;}
 .empty {grid-area:empty}
 
 .grid_container {
     display: grid;
     grid-template-areas: 
-    'image name empty contact'
+    'image name name contact'
     'about work work work'
     'social education education education'
     'social references references references';
     gap: 0px;
-    background-color: #2196F3;
-    padding: 15px;
+    margin: 15px;
 
 }
 .grid_container > div {
-    background-color: rgba(255, 255, 255, 0.8);
-    text-align: center;
-    padding: 20px 0;
-    font-size: 30px;
+    padding: 0px;
 }
 
 #photo {
-    height: 150px;
+    width: 200px;
+    border-radius: 2%;
+    margin: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
 }
 

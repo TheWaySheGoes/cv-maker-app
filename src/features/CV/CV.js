@@ -40,20 +40,85 @@ const CV = () => {
     return (
         <>
             <main id="main">
-                <article>
                     <div class="grid_container">
                         <div class="item1"><img id="photo" src={image} alt="Photo"></img></div>
-                        <div class="item2">Name</div>
+                        <div class="item2">
+                            <h1>{fName}</h1>
+                            <h1>{mName}</h1>
+                            <h1>{lName}</h1>
+                            <h4>{jobTitle}</h4>
+                        </div>
                         <div class="empty"></div>
-                        <div class="item3">Contact</div>
-                        <div class="item4">About</div>
-                        <div class="item5">Work</div>
-                        <div class="item6">Social</div>
-                        <div class="item7">Education</div>
-                        <div class="item8">References</div>
-                                           
+                        <div class="item3">
+                            <p>{address}</p>
+                            <p>{tel}</p>
+                            <p>{email}</p>
+                            <p>{webPage}</p>
+                        </div>
+                        <div class="item4">
+                            <h3 class="white_text">About Me</h3>
+                            <p class="white_text">{aboutMe}</p>
+                        </div>
+                        <div class="item5">
+                            <h3>Work Experiance</h3>
+                            {workExperience.map((obj, index) => 
+                                <div class="workItem" key={index}>
+                                    <aside>
+                                    <h4>{obj.company}</h4>
+                                    <p>{obj.city}</p>
+                                    <p>{obj.yearFrom} - {obj.yearTo}</p>
+                                    </aside>
+                                    <article>
+                                    <h4>{obj.title}</h4>
+                                    <p>{obj.description}</p>
+                                    </article>
+                                   <br />
+                                </div>
+                            )}
+                        </div>
+                        <div class="item6">
+                            <h3  class="white_text">Social Links</h3>
+                            <ul>
+                                {socialLinks.map((value, index) => (
+                                    <>
+                                        <li key={index}  class="white_text">
+                                            {value}
+                                        </li>
+
+                                    </>))}
+                            </ul>
+                        </div>
+                        <div class="item7">
+                            <h3>Education</h3>
+                            {education.map((obj, index) => 
+                                <div class="educationItem" key={index}>
+                                    <aside>
+                                    <h4>{obj.school}</h4>
+                                    <p>{obj.city}</p>
+                                    <p>{obj.yearFrom} - {obj.yearTo}</p>
+
+                                    </aside>
+                                    <article>
+                                    <h4>{obj.title}</h4>
+                                    <p>{obj.description}</p>
+                                    </article>
+                                   <br />
+                                </div>
+                            )}
+                        </div>
+                        <div class="item8">
+                            <h3>References</h3>
+                            <ul>
+                                {references.map((value, index) => (
+                                    <>
+                                        <li key={index}>
+                                            {value}
+                                        </li>
+
+                                    </>))}
+                            </ul>
+                        </div>
                     </div>
-                </article>
             </main>
         </>
     );
@@ -61,3 +126,4 @@ const CV = () => {
 }
 
 export default memo(CV);
+

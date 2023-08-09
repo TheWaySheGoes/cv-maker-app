@@ -1,0 +1,21 @@
+
+
+
+.nav_ul {
+    display:block;
+    list-style-type: none;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.nav_ul_li {
+    display:inline-block;
+    margin-left: 15px;
+    margin-right: 15px;
+
+}
+.static {
+    border: 1px solid darkgray;
+    margin:30px;
+    background-color: azure;
+}
