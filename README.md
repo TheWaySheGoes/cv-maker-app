@@ -3,9 +3,9 @@ This is a simple implementation of the Node.js/React + Redux frameworks for crea
 User has to enter information in the form and the CV is going to be generated. From there it can be 
 printed out via browser.
 
-![plot](./page1.png)
-![plot](./page2.PNG.png)
-![plot](./page3.PNG.png)
+![plot](page1.png)
+![plot](page2.PNG.png)
+![plot](page3.PNG.png)
 
 In the future a choice of a CV is going to be incorporated.
 
