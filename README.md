@@ -4,8 +4,8 @@ User has to enter information in the form and the CV is going to be generated. F
 printed out via browser.
 
 ![plot](page1.png)
-![plot](page2.PNG.png)
-![plot](page3.PNG.png)
+![plot](page2.png)
+![plot](page3.png)
 
 In the future a choice of a CV is going to be incorporated.
 
