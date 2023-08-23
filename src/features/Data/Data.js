@@ -159,7 +159,7 @@ const Data = () => {
                 </p>
                 <p class="info">DONT FORGET TO SAVE CHANGES BEFORE VIEWING CV!</p>
                 <form onSubmit={saveGlobalState}>
-                    <button type="submit" class="submitBtn">save changes</button><br />
+                    <button type="submit" class="btn_submit">save changes</button><br />
                     <label class="label">First Name: <input class="input" type="text" value={fName} onChange={(e) => setFNameState(e.target.value)} /></label><br />
                     <label class="label">Middle Name: <input class="input" type="text" value={mName} onChange={(e) => setMNameState(e.target.value)} /></label><br />
                     <label class="label">Last Name: <input class="input" type="text" value={lName} onChange={(e) => setLNameState(e.target.value)} /></label><br />
@@ -175,10 +175,10 @@ const Data = () => {
                     </label><br />
                     {/*Social Links*/}
                     <hr /><hr />
-                    <label class="label">Social Links:
+                    <label class="label">Social Links:</label>
                         <button class="btn_plus" value="1" onClick={(e) => addSocialLinksElements(e.target.value)}>+</button>
                         <button class="btn_minus" value="1" onClick={(e) => removeSocialLinksElements(e.target.value)}>-</button>
-                    </label><br />
+                        <br /><br />
                     <label class="label">
                         {socialLinks.map((value, index) => (
                             <>
@@ -187,10 +187,10 @@ const Data = () => {
                     </label>
                     {/*Work Experience*/}
                     <hr /><hr />
-                    <label class="label">Work Experiance:
+                    <label class="label">Work Experiance:</label>
                         <button class="btn_plus" onClick={() => addWorkExperienceElements()}>+</button>
                         <button class="btn_minus" onClick={() => removeWorkExperienceElements()}>-</button>
-                    </label><br />
+                        <br /><br />
                     {workExperience.map((obj, index) => (
                         <div key={index}>
                             <label class="label">Company: <input class="input" type="text" value={obj.company} onChange={(e) => handleWorkExperianceList(e.target.value, index, "company")} /></label><br />
@@ -205,10 +205,10 @@ const Data = () => {
                     ))}
                     {/*education*/}
                     <hr /><hr />
-                    <label class="label">Education:
+                    <label class="label">Education: </label>
                         <button class="btn_plus" onClick={() => addEducationElements()}>+</button>
                         <button class="btn_minus" onClick={() => removeEducationElements()}>-</button>
-                    </label><br />
+                   <br /><br />
                     {education.map((obj, index) => (
                         <div key={index}>
                             <label class="label">School: <input class="input" type="text" value={obj.school} onChange={(e) => handleEducationList(e.target.value, index, "school")} /></label><br />
@@ -227,10 +227,10 @@ const Data = () => {
                     <img src={image} style={{ height: "200px" }}></img><br />
                     {/*References */}
                     <hr /><hr />
-                    <label class="label">References:
+                    <label class="label">References:</label>
                         <button class="btn_plus" onClick={() => addReferencesElements()}>+</button>
                         <button class="btn_minus" onClick={() => removeReferencesElements()}>-</button>
-                    </label><br />
+                        <br /><br />
                     <label class="label">
                         {references.map((value, index) => (
                             <>

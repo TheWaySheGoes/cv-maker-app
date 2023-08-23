@@ -1,92 +1,104 @@
 .label {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: left;
-    padding: 5px;
-    font-weight: bold;
-/*    background-color: beige;*/
-  }
-  
-  .input {
-    height: 20px;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    border-top: none;
-    border-left: none;
-    border-width: 2px;
-    border-color: lightgray;
-    border-radius: 5px;
-
-  }
-
-
-  .info {
-    background-color: lightcoral;
-    text-align: center;
-    border-radius: 10px;
-  }
-
-#description {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  padding: 5px;
+  font-weight: bold;
+  /*    background-color: beige;*/
 }
 
-  button {
-    width: 50px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    padding: 10px;
-    margin-left: auto;
-    margin-right: auto;
-/*    border-top: none;
+.input {
+  height: 20px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  border-top: none;
+  border-left: none;
+  border-width: 2px;
+  border-color: lightgray;
+  border-radius: 5px;
+
+}
+
+
+.info {
+  background-color: lightcoral;
+  text-align: center;
+  border-radius: 10px;
+}
+
+#description {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+button {
+  width: 50px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: auto;
+  margin-right: 5px;
+  padding: 10px;
+  /*    border-top: none;
     border-left: none;*/
-    border-width: 0px;
-    border-color: lightgray;
-    border-radius: 50px;
-    font-weight: bold;
-    font-size: large;
-    box-shadow: 3px 3px 20px 0px lightblue;
+  border-width: 0px;
+  border-color: lightgray;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: large;
+  box-shadow: 3px 3px 20px 0px lightblue;
+}
+button:hover {
+  box-shadow: 5px 3px 20px 10px lightblue;
+}
+button:active {
+  box-shadow: 5px 3px 20px 10px lightcoral;
+}
 
-  }
+.btn_plus {
+  /*background-color: lightgreen;*/
+  background-image: linear-gradient(to bottom right, rgba(144, 238, 144, 0), rgb(144, 238, 144));
+}
+.btn_plus:active {
+  box-shadow: 5px 3px 20px 10px rgb(144, 238, 144);
+}
+.btn_minus {
+  /*background-color: lightcoral;*/
+  background-image: linear-gradient(to bottom right, rgba(240, 128, 128, 0), lightcoral);
+}
+.btn_minus:active {
+  box-shadow: 5px 3px 20px 10px lightcoral;
+}
 
-  .btn_plus {
-    /*background-color: lightgreen;*/
-    background-image: linear-gradient(to bottom right, rgba(144, 238, 144, 0), rgb(144, 238, 144));
-  }
+.btn_submit {
+  display: block;
+  width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  /*background-color:darkorange;*/
+  background-image: linear-gradient(to bottom right, rgba(255, 140, 0, 0), rgb(255, 140, 0));
+}
+.btn_submit:active {
+  box-shadow: 5px 3px 20px 10px rgb(255, 140, 0);
+}
 
-  .btn_minus {
-    /*background-color: lightcoral;*/
-    background-image: linear-gradient(to bottom right, rgba(240, 128, 128, 0), lightcoral);
-  }
+form {
+  display: block;
 
-  .btn_submit {
-    display: block;
-    width: 100px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    /*background-color:darkorange;*/
-    background-image: linear-gradient(to bottom right, rgba(255, 140, 0, 0), rgb(255, 140, 0));
-    
-  }
-
-  form{
-    display: block;
-
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 15px;
- /*   border-color: lightgray;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 15px;
+  /*   border-color: lightgray;
     border-style: solid;
     border-width: 1px;*/
-    
-  }
-  h1{
-    text-align: center;
-  }
-  
+
+}
+
+h1 {
+  text-align: center;
+}
