@@ -95,12 +95,10 @@ article{
     padding-top: 5px;
 }
 
-.itemContainer {
+.item_container {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
 
-}
-.workItem, .educationItem  {
 }

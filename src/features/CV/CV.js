@@ -61,7 +61,7 @@ const CV = () => {
                     </div>
                     <div class="item5">
                         <h3>Work Experiance</h3>
-                        <div class="itemContainer">
+                        <div class="item_container">
                             {workExperience.map((obj, index) =>
                                 <div class="workItem" key={index}>
                                     <aside>
@@ -93,9 +93,9 @@ const CV = () => {
                     </div>
                     <div class="item7">
                         <h3>Education</h3>
-                        <div class="itemContainer">
+                        <div class="item_container">
                             {education.map((obj, index) =>
-                                <div class="educationItem" key={index}>
+                                <div class="education_item" key={index}>
                                     <aside>
                                         <h4>{obj.school}</h4>
                                         <p>{obj.city}</p>

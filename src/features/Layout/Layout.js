@@ -8,7 +8,6 @@ const Layout = () => {
 
 
     return (
-
         <>
             <div id="page_container">
                 <header class="static">

@@ -237,7 +237,7 @@ const Data = () => {
                                 <input class="input" key={index} type="text" value={value} onChange={(e) => handleReferencesList(e.target.value, index)} /><br />
                             </>))}
                     </label>
-                    <button type="submit" class="submitBtn">save changes</button>
+                    <button type="submit" class="btn_submit">save changes</button>
                 </form >
                 <p class="info">DONT FORGET TO SAVE CHANGES BEFORE VIEWING CV!</p>
             </main>
