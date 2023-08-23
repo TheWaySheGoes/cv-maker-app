@@ -14,7 +14,7 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Data />} />
           <Route path="CV" element={<CV />} />
-          <Route path="*" element={<NoPage />} />
+          <Route path="*" element={<Data />} />
         </Route>
       </Routes>
     </BrowserRouter>

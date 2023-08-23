@@ -10,33 +10,35 @@ const Layout = () => {
     return (
 
         <>
-            <header class="static">
-                <nav>
-                    <ul class="nav_ul">
-                        <li class="nav_ul_li">
-                            <Link to="/">Data</Link>
-                        </li>
-                        <li class="nav_ul_li">
-                            <Link to="/CV">CV</Link>
-                        </li>
-                    </ul>
-                </nav>
-            </header>
+            <div id="page_container">
+                <header class="static">
+                    <nav>
+                        <ul class="nav_ul">
+                            <li class="nav_ul_li">
+                                <Link to="/">Data</Link>
+                            </li>
+                            <li class="nav_ul_li">
+                                <Link to="/CV">CV</Link>
+                            </li>
+                        </ul>
+                    </nav>
+                </header>
 
-            <Outlet />
+                <Outlet />
 
-            <footer class="static">
-                <nav>
-                    <ul class="nav_ul">
-                        <li class="nav_ul_li">
-                            <Link to="/">Data</Link>
-                        </li>
-                        <li class="nav_ul_li">
-                            <Link to="/CV">CV</Link>
-                        </li>
-                    </ul>
-                </nav>
-            </footer>
+                <footer class="static">
+                    <nav>
+                        <ul class="nav_ul">
+                            <li class="nav_ul_li">
+                                <Link to="/">Data</Link>
+                            </li>
+                            <li class="nav_ul_li">
+                                <Link to="/CV">CV</Link>
+                            </li>
+                        </ul>
+                    </nav>
+                </footer>
+            </div>
         </>
 
     )

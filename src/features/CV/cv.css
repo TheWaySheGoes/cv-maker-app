@@ -19,6 +19,7 @@ body * {
     
 }
 
+
 h4, h3, h2, h1, p {
     margin: 10px;
     padding-left: 15px;
@@ -50,18 +51,29 @@ article{
 .item3 {grid-area:contact;}
 .item4 {grid-area:about; background-color: darkslategrey !important;}
 .item5 {grid-area:work; border-top: solid 1px gray;}
-.item6 {grid-area:social; background-color: darkslategrey !important; border-top: solid 1px lightgray ;}
+.item6 {
+    grid-area:social;
+    background-color: darkslategrey !important; 
+    border-top: solid 1px lightgray;
+    word-break: break-all;
+}
 .item7 {grid-area:education; border-top: solid 1px gray;}
-.item8 {grid-area:references;}
+.item8 {
+    grid-area:references; 
+    background-color: darkslategrey !important; 
+    border-top: solid 1px lightgray;
+    word-break: break-all;
+    }
 .empty {grid-area:empty}
 
 .grid_container {
     display: grid;
+    grid-template-columns: 250px 300px auto;
     grid-template-areas: 
-    'image name name contact'
-    'about work work work'
-    'social education education education'
-    'social references references references';
+    'image name contact'
+    'about work work'
+    'social education education'
+    'references empty empty';
     gap: 0px;
     margin: 15px;
 
@@ -83,3 +95,12 @@ article{
     padding-top: 5px;
 }
 
+.itemContainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+
+}
+.workItem, .educationItem  {
+}
